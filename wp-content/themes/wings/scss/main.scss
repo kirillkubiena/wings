@@ -1,0 +1,31 @@
+// Variables
+@import 'base/_variables.scss';
+// Fonts
+@import 'base/_fonts.scss';
+// Mixins
+@import 'base/_mixins.scss';
+
+// Main settings and attributes
+// Main settings of document
+@import 'base/_base.scss';
+// Layout, grid
+@import 'base/_layout.scss';
+// Main typography settings
+@import 'base/_typography.scss';
+
+// Components
+// Footer
+@import 'components/_footer.scss';
+// Header
+@import 'components/_nav.scss';
+// form
+@import 'components/_form.scss';
+
+// Pages
+// 404
+@import 'pages/_404.scss';
+@import 'pages/_contact.scss';
+@import 'pages/_gallery.scss';
+@import 'pages/_home-page.scss';
+@import 'pages/_menu.scss';
+@import 'pages/_news.scss';

@@ -1,0 +1,46 @@
+.gallery-page-bg {
+  @include background('../images/bg-gallery.jpg');
+  padding: 0 40px;
+
+  .bg-gallery h1 {
+    @include heading();
+  }
+}
+
+.gallery {
+  background-color: $white;
+  padding: 5px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 300px;
+      padding: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery-page-bg {
+    padding: 0 20px;
+
+    .bg-gallery h1 {
+      font-size: 60px;
+    }
+  }
+
+  .gallery {
+    ul {
+      img {
+        width: 100%;
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+}
