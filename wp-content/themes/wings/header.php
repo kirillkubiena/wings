@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-  <header class="<?php if(is_page('hlavni-stranka')) echo('home-page-bg');  else if(is_page('menu')) echo('menu-page-bg'); else if(is_page('galerie')) echo('gallery-page-bg'); else if(is_page('novinky')) echo('news-page-bg'); else if(is_page('kontakt')) echo('contact-page-bg'); else echo('page-not-found'); ?>">
+  <header class="<?php if(is_page('hlavni-stranka')) echo('home-page-bg'); else if(is_page('menu')) echo('menu-page-bg'); else if(is_page('galerie')) echo('gallery-page-bg'); else if(is_page('novinky')) echo('news-page-bg'); else if(is_page('kontakt')) echo('contact-page-bg'); else if(is_single()) echo('news-single-bg'); else echo('page-not-found'); ?>">
     <div class="nav container">
       <div class="logo">
         <a href="<?php echo get_home_url(); ?>">

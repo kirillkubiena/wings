@@ -9,17 +9,7 @@
             'posts_per_page' => 3,
             'orderby'         => 'date',
             'order'           => 'DSC',
-            'paged' => get_query_var('paged') ? get_query_var('paged') : 1
           ));
-
-          // Paginator args
-          $paginator_args = array(
-            'prev_next'     => false,
-            'end_size'      => "1",
-            'mid_size'      => '2',
-            'current' => max( 1, get_query_var('paged') ),
-            'total' => $query->max_num_pages
-          );
 
           if($query->have_posts()):
             while($query->have_posts()):
