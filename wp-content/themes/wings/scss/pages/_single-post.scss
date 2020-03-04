@@ -1,0 +1,70 @@
+.news-single-bg {
+  background-image: url('../images/bg-news.jpg');
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  height: 465px;
+
+  .bg-news h2 {
+    font-size: 60px;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 3px 5px $black;
+    line-height: normal;
+  }
+}
+
+.single-post {
+  background-color: $white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 90%;
+
+    h4 {
+      align-self: flex-start;
+      font-family: 'Ubuntu';
+      font-size: 30px;
+      padding: 0 0 25px 0;
+      line-height: normal;
+    }
+
+    .post-date {
+      align-self: flex-start;
+      font-weight: normal;
+      font-size: 16px;
+      color: #aaaaaa;
+      position: relative;
+      margin-left: 30px;
+      padding: 0;
+
+      &:before {
+        content: url('../images/calendar.svg');
+        position: absolute;
+        width: 28px;
+        top: -2px;
+        left: -34px;
+      }
+    }
+
+    p {
+      text-align: justify;
+      padding: 25px 0;
+    }
+
+    img {
+      width: 800px;
+      padding: 25px 0;
+    }
+  }
+}

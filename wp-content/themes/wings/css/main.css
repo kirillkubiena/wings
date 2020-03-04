@@ -1162,6 +1162,9 @@ footer .footer-copyright a:hover {
   -webkit-box-shadow: 0 0 10px 0 #b8b8b8;
           box-shadow: 0 0 10px 0 #b8b8b8;
   margin: 100px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
 }
 
 .news-preview .container ul .card-image-img {
@@ -1174,22 +1177,18 @@ footer .footer-copyright a:hover {
   padding: 10px;
   margin: 10px;
   text-align: left;
+  position: relative;
 }
 
 .news-preview .container ul .card-content .news-perex {
   font-weight: bold;
   line-height: 30px;
-  font-size: 25px;
-}
-
-.news-preview .container ul .card-content .news-perex {
-  font-weight: bold;
-  line-height: 30px;
-  font-size: 25px;
+  font-size: 22px;
+  min-height: 120px;
+  margin-bottom: 20px;
 }
 
 .news-preview .container ul .card-content-wrapper {
-  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1639,6 +1638,9 @@ footer .footer-copyright a:hover {
   -webkit-box-shadow: 0 0 10px 0 #b8b8b8;
           box-shadow: 0 0 10px 0 #b8b8b8;
   margin: 20px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0;
+          flex: 1 0;
 }
 
 .news-page .container ul .card-image-img {
@@ -1651,22 +1653,18 @@ footer .footer-copyright a:hover {
   padding: 10px;
   margin: 10px;
   text-align: left;
+  position: relative;
 }
 
 .news-page .container ul .card-content .news-perex {
   font-weight: bold;
   line-height: 30px;
-  font-size: 25px;
-}
-
-.news-page .container ul .card-content .news-perex {
-  font-weight: bold;
-  line-height: 30px;
-  font-size: 25px;
+  font-size: 22px;
+  min-height: 120px;
+  margin-bottom: 20px;
 }
 
 .news-page .container ul .card-content-wrapper {
-  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1765,5 +1763,88 @@ footer .footer-copyright a:hover {
   .news-page-bg .bg-news h1 {
     font-size: 60px;
   }
+}
+
+.news-single-bg {
+  background-image: url("../images/bg-news.jpg");
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  height: 465px;
+}
+
+.news-single-bg .bg-news h2 {
+  font-size: 60px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-shadow: 0 3px 5px #000000;
+  line-height: normal;
+}
+
+.single-post {
+  background-color: #ffffff;
+}
+
+.single-post .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+  width: 90%;
+}
+
+.single-post .container h4 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: 'Ubuntu';
+  font-size: 30px;
+  padding: 0 0 25px 0;
+  line-height: normal;
+}
+
+.single-post .container .post-date {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: normal;
+  font-size: 16px;
+  color: #aaaaaa;
+  position: relative;
+  margin-left: 30px;
+  padding: 0;
+}
+
+.single-post .container .post-date:before {
+  content: url("../images/calendar.svg");
+  position: absolute;
+  width: 28px;
+  top: -2px;
+  left: -34px;
+}
+
+.single-post .container p {
+  text-align: justify;
+  padding: 25px 0;
+}
+
+.single-post .container img {
+  width: 800px;
+  padding: 25px 0;
 }
 /*# sourceMappingURL=main.css.map */

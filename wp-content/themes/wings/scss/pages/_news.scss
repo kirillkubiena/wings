@@ -25,6 +25,7 @@
         background-color: #ffffff;
         box-shadow: 0 0 10px 0 #b8b8b8;
         margin: 20px 10px;
+        flex: 1 0;
 
         &-image {
           &-img {
@@ -38,21 +39,17 @@
           padding: 10px;
           margin: 10px;
           text-align: left;
+          position: relative;
 
           .news-perex {
             font-weight: bold;
             line-height: 30px;
-            font-size: 25px;
-          }
-
-          .news-perex {
-            font-weight: bold;
-            line-height: 30px;
-            font-size: 25px;
+            font-size: 22px;
+            min-height: 120px;
+            margin-bottom: 20px;
           }
 
           &-wrapper {
-            margin-top: 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
