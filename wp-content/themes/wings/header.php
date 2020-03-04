@@ -32,7 +32,7 @@
           <ul class="container">
             <li>
               <div class="responsive-logo">
-                <a href="index.html">
+                <a href="<?php echo get_home_url(); ?>">
                   <img src="<?php bloginfo('template_url') ?>/images/wings-logo.svg" alt="wings logo" />
                 </a>
               </div>

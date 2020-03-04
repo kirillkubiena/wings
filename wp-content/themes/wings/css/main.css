@@ -467,6 +467,7 @@ footer .footer-copyright a:hover {
   background-color: #000000;
   color: #ffffff;
   margin-top: 20px;
+  margin-left: 16px;
   padding: 15px 150px;
   font-size: 20px;
   border-radius: 10px;
@@ -1163,7 +1164,7 @@ footer .footer-copyright a:hover {
   margin: 100px 10px;
 }
 
-.news-preview .container ul .card img {
+.news-preview .container ul .card-image-img {
   display: block;
   width: 100%;
   height: auto;
@@ -1175,7 +1176,13 @@ footer .footer-copyright a:hover {
   text-align: left;
 }
 
-.news-preview .container ul .card-content p {
+.news-preview .container ul .card-content .news-perex {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.news-preview .container ul .card-content .news-perex {
   font-weight: bold;
   line-height: 30px;
   font-size: 25px;
@@ -1194,7 +1201,7 @@ footer .footer-copyright a:hover {
           align-items: center;
 }
 
-.news-preview .container ul .card-content-wrapper a {
+.news-preview .container ul .card-content-wrapper .link-archive {
   text-decoration: none;
   color: #cc7b3e;
   font-weight: bold;
@@ -1202,7 +1209,7 @@ footer .footer-copyright a:hover {
   position: relative;
 }
 
-.news-preview .container ul .card-content-wrapper a:after {
+.news-preview .container ul .card-content-wrapper .link-archive:after {
   content: '';
   height: 2px;
   position: absolute;
@@ -1214,22 +1221,22 @@ footer .footer-copyright a:hover {
   transition: 0.2s;
 }
 
-.news-preview .container ul .card-content-wrapper a:hover:after {
+.news-preview .container ul .card-content-wrapper .link-archive:hover:after {
   width: 100%;
 }
 
-.news-preview .container ul .card-content-wrapper p {
+.news-preview .container ul .card-content-wrapper-date {
   font-weight: normal;
   font-size: 16px;
   color: #aaaaaa;
   position: relative;
 }
 
-.news-preview .container ul .card-content-wrapper p:before {
+.news-preview .container ul .card-content-wrapper-date:before {
   content: url("../images/calendar.svg");
   position: absolute;
   width: 28px;
-  top: 0;
+  top: -2px;
   left: -34px;
 }
 
@@ -1608,6 +1615,147 @@ footer .footer-copyright a:hover {
   font-family: 'Archivo Black';
   text-transform: uppercase;
   text-shadow: 0 3px 5px #000000;
+}
+
+.news-page {
+  background-color: #eeeeee;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.news-page .container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.news-page .container ul .card {
+  list-style: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 10px 0 #b8b8b8;
+          box-shadow: 0 0 10px 0 #b8b8b8;
+  margin: 20px 10px;
+}
+
+.news-page .container ul .card-image-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.news-page .container ul .card-content {
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+.news-page .container ul .card-content .news-perex {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.news-page .container ul .card-content .news-perex {
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.news-page .container ul .card-content-wrapper {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-page .container ul .card-content-wrapper .link-archive {
+  text-decoration: none;
+  color: #cc7b3e;
+  font-weight: bold;
+  padding: 5px 0;
+  position: relative;
+}
+
+.news-page .container ul .card-content-wrapper .link-archive:after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  background-color: #cc7b3e;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.news-page .container ul .card-content-wrapper .link-archive:hover:after {
+  width: 100%;
+}
+
+.news-page .container ul .card-content-wrapper-date {
+  font-weight: normal;
+  font-size: 16px;
+  color: #aaaaaa;
+  position: relative;
+}
+
+.news-page .container ul .card-content-wrapper-date:before {
+  content: url("../images/calendar.svg");
+  position: absolute;
+  width: 28px;
+  top: -2px;
+  left: -34px;
+}
+
+.news-page-paginator {
+  padding: 50px 0 0 0;
+}
+
+.news-page-paginator .current {
+  padding: 15px 20px;
+  margin: 0 5px;
+  color: #ffffff;
+  background-color: #cc7b3e;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.news-page-paginator a {
+  padding: 15px 20px;
+  margin: 0 5px;
+  color: #000000;
+  display: inline-block;
+  background-color: #cfcfcf;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  position: relative;
+}
+
+.news-page-paginator a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.news-page-paginator a:hover {
+  background-color: #b3b3b3;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 @media only screen and (max-width: 800px) {

@@ -6,7 +6,7 @@
         </div>
         <div class="contact-phone">
             <h2>Telefon</h2><br>
-            <a href="tel:+420735004997"><?php the_field('telefon', 'option'); ?></a>
+            <a href="tel:<?php the_field('telefon', 'option'); ?>"><?php the_field('telefon', 'option'); ?></a>
         </div>
     </div>
     <div class="contact-map">

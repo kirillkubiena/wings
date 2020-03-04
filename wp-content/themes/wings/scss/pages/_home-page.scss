@@ -255,10 +255,12 @@
         box-shadow: 0 0 10px 0 #b8b8b8;
         margin: 100px 10px;
 
-        img {
-          display: block;
-          width: 100%;
-          height: auto;
+        &-image {
+          &-img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
         }
 
         &-content {
@@ -266,7 +268,13 @@
           margin: 10px;
           text-align: left;
 
-          p {
+          .news-perex {
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 25px;
+          }
+
+          .news-perex {
             font-weight: bold;
             line-height: 30px;
             font-size: 25px;
@@ -278,7 +286,7 @@
             justify-content: space-between;
             align-items: center;
 
-            a {
+            .link-archive {
               text-decoration: none;
               color: $coffee-link;
               //color: #3bb168;
@@ -302,7 +310,7 @@
               }
             }
 
-            p {
+            &-date {
               font-weight: normal;
               font-size: 16px;
               color: #aaaaaa;
@@ -312,7 +320,7 @@
                 content: url('../images/calendar.svg');
                 position: absolute;
                 width: 28px;
-                top: 0;
+                top: -2px;
                 left: -34px;
               }
             }
