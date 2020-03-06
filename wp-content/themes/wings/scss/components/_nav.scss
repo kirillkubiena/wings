@@ -50,10 +50,6 @@
             transition: 200ms ease-in-out;
             position: relative;
 
-            &.active {
-              color: $menu-price;
-            }
-
             &:after {
               content: '';
               position: absolute;
@@ -68,6 +64,24 @@
               transition: 200ms ease-in-out;
             }
           }
+        }
+
+        .current_page_item a {
+          color: $menu-price;
+        }
+      }
+
+      .menu-nav-menu-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+
+        ul {
+          margin-top: -100px;
+          height: 100%;
         }
       }
     }

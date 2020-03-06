@@ -26,7 +26,10 @@
                         'end_size'      => "1",
                         'mid_size'      => '2',
                         'current' => max( 1, get_query_var('paged') ),
-                        'total' => $query->max_num_pages
+                        'total' => $query->max_num_pages,
+                        'prev_next' => True,
+                        'prev_text' => __( '<< Předchozí' ),
+                        'next_text' => __( 'Další >>' )
                     );
 
                     if($query->have_posts()):
@@ -36,9 +39,9 @@
                 <li class="card">
                     <?php if(get_the_post_thumbnail_url()): ?>
                         <div class="card-image">
-                        <a href="<?php the_permalink(); ?>">
-                            <img class="card-image-img" src="<?php the_post_thumbnail_url(); ?>" />
-                        </a>
+                            <a href="<?php the_permalink(); ?>">
+                                <img class="card-image-img" src="<?php the_post_thumbnail_url(); ?>" />
+                            </a>
                         </div>
                     <?php endif; ?>
                     <div class="card-content">
