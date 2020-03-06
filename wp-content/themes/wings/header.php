@@ -29,23 +29,23 @@
       <div class="myMenu" id="menu">
         <a  class="icon" onclick="myMenuShow()"></a>
         <nav class="navigation">
-          <ul class="container">
-            <li>
-              <div class="responsive-logo">
-                <a href="<?php echo get_home_url(); ?>">
-                  <img src="<?php bloginfo('template_url') ?>/images/wings-logo.svg" alt="wings logo" />
-                </a>
-              </div>
-            </li>
-            <li>
-              <a class="responsive-icon" onclick="myMenu()"></a>
-            </li>
-            <li><a href="<?php echo get_home_url(); ?>" class="<?php if(is_page('hlavni-stranka')) echo('active'); ?>">Hlavní stránka</a></li>
-            <li><a href="<?php echo get_page_link( get_page_by_title('menu')); ?>" class="<?php if(is_page('menu')) echo('active'); ?>">Menu</a></li>
-            <li><a href="<?php echo get_page_link( get_page_by_title('galerie')); ?>" class="<?php if(is_page('galerie')) echo('active'); ?>">Galerie</a></li>
-            <li><a href="<?php echo get_page_link( get_page_by_title('novinky')); ?>" class="<?php if(is_page('novinky')) echo('active'); ?>">Novinky</a></li>
-            <li><a href="<?php echo get_page_link( get_page_by_title('kontakt')); ?>" class="<?php if(is_page('kontakt')) echo('active'); ?>">Kontakt</a></li>
-          </ul>
+          <div class="navigation-wrapper">
+            <ul class="container">
+              <li>
+                <div class="responsive-logo">
+                  <a href="<?php echo get_home_url(); ?>">
+                    <img src="<?php bloginfo('template_url') ?>/images/wings-logo.svg" alt="wings logo" />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a class="responsive-icon" onclick="myMenu()"></a>
+              </li>
+            </ul>
+            <?php wp_nav_menu( array(
+              'theme_location' => 'primary'
+            )); ?>
+          </div>
         </nav>
       </div>
     </div>

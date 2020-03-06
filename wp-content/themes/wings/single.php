@@ -1,6 +1,7 @@
 <?php get_header(); ?>
         <div class="bg-news container" >
             <h2><?php the_title(); ?></h2>
+            <?php get_breadcrumb(); ?>
         </div>
     </header>
     <section class="single-post">
