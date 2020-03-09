@@ -6,23 +6,78 @@
                 <h2>Dýmky</h2>
             </li>
             <li class="hookah-card-menu">
-                <h2>Čaje Dilmah</h2>
+            <h2><?php the_field('nadpis_nealko'); ?></h2>
                 <div class="line"></div>
-                <p>Dilmah je odlišný... Dilmah je produktem vášně a zanícení
-                pro čaj. Dilmah je celoživotní láska k Ceylonskému čaji. Dilmah je
-                jedinou mezinárodní čajovou značkou vlastněnou pěstitelem čaje.
-                Dilmah čaje jsou ručně sbírány, pečlivě vybírány a baleny přímo v
-                místě původu. Dilmah je plně integrovaná společnost, péče o čaje
-                od čajových zahrad až k Vašemu šálku čaje. Dilmah je opravdu tradiční
-                a autenitcký, balí se v místě původ. Dilmah je jediný skutečně etický čaj na světě.
-                </p>
-                <div>
-                    <p>Earl Gery (černý čaj) <span>49,-</span></p>
-                    <p>Černý čaj s malinami <span>49,-</span></p>
-                    <p>Zelený čaj <span>49,-</span></p>
-                    <p>Jasmínový čaj <span>49,-</span></p>
-                    <p>Ovocný čaj <span>49,-</span></p>
-                </div>
+                <div><?php
+                    if( have_rows('polozky_nealko') ):
+                        while ( have_rows('polozky_nealko') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_nealko'); ?> <span><?php the_sub_field('cena_nealko'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_alko'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_alko') ):
+                        while ( have_rows('polozky_alko') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_alko'); ?><br>(<?php the_sub_field('poznamka_alko') ?>) <span><?php the_sub_field('cena_alko'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_whiskey'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_whiskey') ):
+                        while ( have_rows('polozky_whiskey') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_whiskey'); ?> <span><?php the_sub_field('cena_whiskey'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_gin'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_gin') ):
+                        while ( have_rows('polozky_gin') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_gin'); ?> <span><?php the_sub_field('cena_gin'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_vodka'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_vodka') ):
+                        while ( have_rows('polozky_vodka') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_vodka'); ?> <span><?php the_sub_field('cena_vodka'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_rum'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_rum') ):
+                        while ( have_rows('polozky_rum') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_rum'); ?> <span><?php the_sub_field('cena_rum'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
             </li>
         </ul>
         <ul class="tea-card">
@@ -31,23 +86,19 @@
                 <h2>Čaj</h2>
             </li>
             <li class="tea-card-menu">
-                <h2>Čaje Dilmah</h2>
+                <h2><?php the_field('nadpis_caj'); ?></h2>
                 <div class="line"></div>
-                <p>Dilmah je odlišný... Dilmah je produktem vášně a zanícení
-                pro čaj. Dilmah je celoživotní láska k Ceylonskému čaji. Dilmah je
-                jedinou mezinárodní čajovou značkou vlastněnou pěstitelem čaje.
-                Dilmah čaje jsou ručně sbírány, pečlivě vybírány a baleny přímo v
-                místě původu. Dilmah je plně integrovaná společnost, péče o čaje
-                od čajových zahrad až k Vašemu šálku čaje. Dilmah je opravdu tradiční
-                a autenitcký, balí se v místě původ. Dilmah je jediný skutečně etický čaj na světě.
-                </p>
-                <div>
-                    <p>Earl Gery (černý čaj) <span>49,-</span></p>
-                    <p>Černý čaj s malinami <span>49,-</span></p>
-                    <p>Zelený čaj <span>49,-</span></p>
-                    <p>Jasmínový čaj <span>49,-</span></p>
-                    <p>Ovocný čaj <span>49,-</span></p>
-                </div>
+                <p><?php the_field('text_caj'); ?></p>
+                <div><?php
+                    if( have_rows('polozky_caj') ):
+                        while ( have_rows('polozky_caj') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_caj'); ?> <span><?php the_sub_field('cena_caj'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
             </li>
         </ul>
     </div>
@@ -58,29 +109,19 @@
                 <h2>Káva</h2>
             </li>
             <li class="coffee-card-menu">
-                <h2>Cafe Reserva</h2>
+                <h2><?php the_field('nadpis_kava'); ?></h2>
                 <div class="line"></div>
-                <p>Aby chuť kávy CAFE RESERVA byla jedinečná,
-                vybrali jsme pro naše směsi zrnka kávy vypěstované
-                pouze na malých plantážích v rovníkové Africe, Indii
-                nebo Střední a Jižní Americe. Všechny naše dodavatelské
-                farmy jsou držitelem pečeti Rainforest Alliance Certified.
-                Kávovniky na naších farmách rostou přírozeně ve stínu deštných
-                pralesů. Káva se zde pěstuje bez použití umělých pesticidů,
-                herbicidů nebo chemických hnojiv. Tyto pěstební postupy pomáhají
-                udržovat zdravé životní prostředí a přispívají k ochráně čísté
-                podzemní vody. Potvrzením vyské kvality a zodpovědného přístupu
-                ke strategii trvale udržitelného rozvoje a ochrany tropických ekosystémů
-                je pečeť Rainforest Alliance certified.
-                </p>
-                <div>
-                    <p>Espresso<br>(malé silné espresso) <span>40,-</span></p>
-                    <p>Espresso Doppio<br>(dvojité espresso) <span>65,-</span></p>
-                    <p>Espresso Lungo<br>(velké espresso) <span>45,-</span></p>
-                    <p>Cappuccino<br>(espresso s našlehanou mléčnou pěnou) <span>55,-</span></p>
-                    <p>Espresso Macchiato<br>(espresso s mléčnou pěnou) <span>50,-</span></p>
-                    <p>Latte Macchiato<br>(espresso s našlehaným mlékem a našlehanou mléčnou pěnou) <span>60,-</span></p>
-                </div>
+                <p><?php the_field('text_kava'); ?></p>
+                <div><?php
+                    if( have_rows('polozky_kava') ):
+                        while ( have_rows('polozky_kava') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_kavy'); ?><br>(<?php the_sub_field('poznamka_kava'); ?>) <span><?php the_sub_field('cena_kava'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
             </li>
         </ul>
         <ul class="other-card">
@@ -89,45 +130,78 @@
                 <h2>Ostatní</h2>
             </li>
             <li class="other-card-menu">
-                <h2>Nealkoholické nápoje</h2>
+                <h2><?php the_field('nadpis_nealko'); ?></h2>
                 <div class="line"></div>
-                <div>
-                    <p>0,33l Römerquelle voda<br> (dle denní nabídky) <span>39,-</span></p>
-                    <p>0,20l Coca-Cola <span>37,-</span></p>
-                    <p>0,20l Coca-Cola zero <span>37,-</span></p>
-                    <p>0,25l Cappy nektar<br> (dle denní nabídky) <span>38,-</span></p>
-                    <p>0,25l Kinley Tonic<br> (dle denní nabídky) <span>39,-</span></p>
-                    <p>0,33l Limonády<br> (dle denní nabídky) <span>55,-</span></p>
-                </div>
-                <h2>Alkoholické nápoje<br>Míchané nápoje</h2>
+                <div><?php
+                    if( have_rows('polozky_nealko') ):
+                        while ( have_rows('polozky_nealko') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_nealko'); ?> <span><?php the_sub_field('cena_nealko'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_alko'); ?></h2>
                 <div class="line"></div>
-                <div>
-                    <p>Aperol Spritz<br>(0,08l Prosecco, 0,04l Aperol, soda) <span>100,-</span></p>
-                    <p>Cuba Libre<br>(0,04l bílý rum, Coca-Cola, limetka) <span>100,-</span></p>
-                    <p>Aperitivy<br>(0,10l Clinzano Rosso) <span>50,-</span></p>
-                </div>
-                <h2>Whiskey</h2>
+                <div><?php
+                    if( have_rows('polozky_alko') ):
+                        while ( have_rows('polozky_alko') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_alko'); ?><br>(<?php the_sub_field('poznamka_alko') ?>) <span><?php the_sub_field('cena_alko'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_whiskey'); ?></h2>
                 <div class="line"></div>
-                <div>
-                    <p>0,04l Jack Daniels <span>59,-</span></p>
-                </div>
-                <h2>Gin</h2>
+                <div><?php
+                    if( have_rows('polozky_whiskey') ):
+                        while ( have_rows('polozky_whiskey') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_whiskey'); ?> <span><?php the_sub_field('cena_whiskey'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_gin'); ?></h2>
                 <div class="line"></div>
-                <div>
-                    <p>0,04l Beefeater Pink <span>55,-</span></p>
-                </div>
-                <h2>Vodka</h2>
+                <div><?php
+                    if( have_rows('polozky_gin') ):
+                        while ( have_rows('polozky_gin') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_gin'); ?> <span><?php the_sub_field('cena_gin'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_vodka'); ?></h2>
                 <div class="line"></div>
-                <div>
-                    <p>0,04l Russian Standard <span>55,-</span></p>
-                </div>
-                <h2>Rum</h2>
+                <div><?php
+                    if( have_rows('polozky_vodka') ):
+                        while ( have_rows('polozky_vodka') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_vodka'); ?> <span><?php the_sub_field('cena_vodka'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_rum'); ?></h2>
                 <div class="line"></div>
-                <div>
-                    <p>0,04l Capitan Bucanero Elixir <span>55,-</span></p>
-                    <p>0,04l Božkov Republica <span>50,-</span></p>
-                    <p>0,04l Dos Maderas P.X 5+5 years old <span>127,-</span></p>
-                </div>
+                <div><?php
+                    if( have_rows('polozky_rum') ):
+                        while ( have_rows('polozky_rum') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_rum'); ?> <span><?php the_sub_field('cena_rum'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
             </li>
         </ul>
     </div>

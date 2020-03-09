@@ -4,6 +4,10 @@
   <meta charset="<?php bloginfo('charset') ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="author" content="Kirill Kubiena">
+  <meta name="copyright" content="Wings 2020">
+  <meta name="description" content="Jsem krásná moderní kavárna s vynikajícími dýmkami, s příjemným prostředím a originalitou, s vyjímečnou chutí kávy, čajů a pochutin">
+  <meta name="keywords" content="Wings, wings karviná, čajovna, čajovna karviná, hookah bar, kávarna, karvina" />
   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/main.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/images/icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/images/icon/favicon-32x32.png">
@@ -11,7 +15,6 @@
   <link rel="manifest" href="<?php bloginfo('template_url') ?>/images/icon/site.webmanifest">
   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/lightbox/css/lightbox.css" type="text/css" media="screen">
   <script src="<?php bloginfo('template_url') ?>/lightbox/js/lightbox-plus-jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <title><?php
         wp_title('|', true, 'right'); bloginfo('name');
         if ( is_front_page() ) echo ' | ' . get_bloginfo('description');
