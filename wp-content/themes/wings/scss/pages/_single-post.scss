@@ -1,5 +1,6 @@
 .news-single-bg {
-  background-image: url('../images/bg-news.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../images/bg-news.jpg');
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +24,7 @@
 
   .breadcrumb {
     list-style: none;
-    color: $white;
+    color: #cfcfcf;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -32,7 +33,7 @@
 
     &-arrow {
       padding: 0 15px;
-      color: $white;
+      color: #cfcfcf;
       text-shadow: 0 3px 4px $black;
     }
 
@@ -40,6 +41,12 @@
       color: #f1a062;
       text-decoration: none;
       text-shadow: 0 1px 1px $black;
+      transition: 200ms ease-in-out;
+
+      &:hover {
+        color: #ffffff;
+        transition: 200ms ease-in-out;
+      }
     }
 
     span {
