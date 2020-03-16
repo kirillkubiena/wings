@@ -10,8 +10,7 @@
 1. Vytvořit a naimportovat databázi na local
 2. Nastavit `wp-config-sample.php` na `wp-config.php`
 3. Ve `wp-config.php` pak nastavit jmeno databáze a přihlašovácí udaje + prefix
-4. Pro XAMPP - http://localhost/wings
-5. Pro MAMP PRO - http://wings.loc
+4. Pro XAMPP - http://localhost/wings nebo http://wings.loc
 
 ### Sass
 
