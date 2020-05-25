@@ -1,22 +1,36 @@
+<!-- Vložení bloku div -->
 <div class="menu-cards-wrapper container">
+    <!-- Vložení ohraničení -->
     <div class="container">
+        <!-- Vložení seznamu dýmek -->
         <ul class="hookah-card" id="hookah-menu">
             <li class="hookah-card-img">
+                <!-- Vložení obrázku -->
                 <img src="<?php bloginfo('template_url') ?>/images/menu-hookah.jpg" alt="hookah" />
+                <!-- Nadpis -->
                 <h2>Dýmky</h2>
             </li>
+            <!-- Seznam všech dýmek -->
             <li class="hookah-card-menu">
+                <!-- Napdis dýmky -->
                 <h2><?php the_field('nadpis_dymky'); ?></h2>
+                <!-- Vytvoření linky -->
                 <div class="line"></div>
                 <div><?php
+                    // Podmínka pro zjištění, jestli pole 'polozky_dymky' není prázdné
                     if( have_rows('polozky_dymky') ):
+                        // Procházení pole
                         while ( have_rows('polozky_dymky') ) : the_row(); ?>
+                            <!-- Vypsání získáných hodnot -->
                             <p><?php the_sub_field('nazev_dymky'); ?><br/>(<?php the_sub_field('poznamka_dymky'); ?>) <span><?php the_sub_field('cena_dymky'); ?>,-</span></p>
+                        <!-- Ukončení procházení -->
                         <?php endwhile;
+                    // Pokračování podmínky
                     else : ?>
+                        <!-- Pokud pole je prázdné, vypíše se následující věta -->
                         <p>Nenašly se žádné položky :(</p>
+                    <!-- Ukončení podmínky -->
                     <?php endif;
-
                 ?></div>
             </li>
         </ul>

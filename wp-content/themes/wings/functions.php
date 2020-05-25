@@ -27,13 +27,21 @@ show_admin_bar(false);
 
 // Outputs Breadcrumb
 function get_breadcrumb() { ?>
+  <!-- Vložení bloku div s třídou breadcrumb -->
   <div class="breadcrumb">
+    <!-- Vložení odkazu na hlavní stránku -->
     <a href="<?php echo home_url(); ?>">Hlavní stránka</a>
+    <!-- Vložení směru navigace -->
     <span class="breadcrumb-arrow">»</span>
+    <!-- Podmínka v PHP -->
     <?php if (is_single()) { ?>
+      <!-- Vložení odkazu na stránku se všemi příspěvky -->
       <a href="<?php echo get_permalink('19'); ?>">Novinky</a>
+      <!-- Vložení směru navigace -->
       <span class="breadcrumb-arrow">»</span>
+        <!-- Podmínka v PHP -->
         <?php if (is_single()) { ?>
+            <!-- Vložení titulku příspěvku -->
             <span><?php the_title(); ?></span>
         <?php  }} ?>
   </div>
