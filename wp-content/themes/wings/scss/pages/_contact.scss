@@ -1,0 +1,182 @@
+.contact-page-bg {
+  @include background('../images/bg-contact.jpg');
+  padding: 0 40px;
+
+  .bg-contact h1 {
+    @include heading();
+  }
+}
+
+.contact {
+  background-color: $white;
+  padding: 0 40px;
+
+  .container {
+    padding: 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .contact-wrapper {
+      margin-top: 50px;
+
+      .contact-address {
+        position: relative;
+        margin-left: 60px;
+        margin-bottom: 100px;
+
+        h2 {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 20px;
+        }
+
+        &:before {
+          content: url('../images/location.svg');
+          position: absolute;
+          top: -10px;
+          left: -100px;
+          width: 100px;
+        }
+      }
+
+      .contact-phone {
+        position: relative;
+        margin-left: 60px;
+
+        h2 {
+          font-size: 40px;
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 20px;
+          color: $btn-contact;
+        }
+
+        &:before {
+          content: url('../images/telephone.svg');
+          position: absolute;
+          top: -10px;
+          left: -90px;
+          width: 80px;
+        }
+      }
+    }
+
+    .contact-map {
+      div {
+        border: 8px solid $black;
+        position: relative;
+        margin-top: 30px;
+
+        &:before {
+          content: 'Mapa';
+          font-size: 35px;
+          font-family: sans-serif;
+          font-weight: bold;
+          padding: 10px 40px;
+          position: absolute;
+          top: -65px;
+          left: -8px;
+          background-color: $black;
+          color: $white;
+        }
+
+        iframe {
+          width: 700px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-page-bg {
+    padding: 0 20px;
+
+    .bg-contact h1 {
+      font-size: 60px;
+    }
+  }
+
+  .contact {
+    padding: 0 20px;
+
+    .container {
+      flex-direction: column;
+      padding: 50px 0;
+
+      .contact-wrapper {
+        margin: 0 auto;
+
+        .contact-address {
+          margin-bottom: 50px;
+
+          h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 18px;
+          }
+
+          &:before {
+            left: -75px;
+            width: 80px;
+          }
+        }
+
+        .contact-phone {
+          margin-left: 60px;
+          margin-bottom: 60px;
+          h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+          a {
+            font-size: 18px;
+          }
+
+          &:before {
+            content: url('../images/telephone.svg');
+            position: absolute;
+            top: -10px;
+            left: -65px;
+            width: 70px;
+          }
+        }
+      }
+
+      .contact-map {
+        margin: 0 auto;
+        div {
+          border: 8px solid $black;
+          position: relative;
+          margin-top: 30px;
+
+          &:before {
+            content: 'Mapa';
+            font-size: 35px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 40px;
+            position: absolute;
+            top: -65px;
+            left: -8px;
+            background-color: $black;
+            color: $white;
+          }
+
+          iframe {
+            width: 315px;
+            height: 500px;
+          }
+        }
+      }
+    }
+  }
+}

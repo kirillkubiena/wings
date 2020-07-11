@@ -1,0 +1,57 @@
+.menu-page-bg {
+  @include background('../images/bg-menu.jpg');
+  padding: 0 40px;
+
+  .bg-menu h1 {
+    @include heading();
+  }
+}
+
+.menu-cards {
+  background-color: $bg-black;
+  padding: 10px 0;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .hookah-card,
+  .coffee-card,
+  .tea-card,
+  .other-card {
+    @include cards();
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-page-bg {
+    padding: 0 20px;
+
+    .bg-menu h1 {
+      font-size: 60px;
+    }
+  }
+
+  .menu-cards {
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    .hookah-card,
+    .coffee-card,
+    .tea-card,
+    .other-card {
+      &-img {
+        h2 {
+          font-size: 60px;
+        }
+      }
+
+      &-menu {
+        padding: 10px;
+      }
+    }
+  }
+}

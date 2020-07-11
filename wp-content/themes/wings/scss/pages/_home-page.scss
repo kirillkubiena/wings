@@ -1,0 +1,527 @@
+.home-page-bg {
+  @include background('../images/bg-about.jpg');
+  padding: 0 40px;
+
+  .container {
+    .content-wrapper {
+      position: absolute;
+      bottom: 100px;
+
+      .main-header {
+        font-family: 'Comming Soon';
+        color: $white;
+        font-size: 60px;
+        text-shadow: 0 5px 5px $black;
+        line-height: 80px;
+        margin-bottom: 30px;
+      }
+
+      .wrapper {
+        display: flex;
+
+        .btn-menu a {
+          color: $white;
+          text-decoration: none;
+          background-color: $btn-menu;
+          padding: 20px 80px;
+          margin-right: 10px;
+          font-size: 24px;
+          border-radius: 10px;
+          transition: 200ms ease-in-out;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          &:hover {
+            background-color: #202020;
+            transition: 200ms ease-in-out;
+          }
+        }
+
+        .btn-contact a {
+          color: $white;
+          text-decoration: none;
+          background-color: $btn-contact;
+          padding: 20px 68px;
+          font-size: 24px;
+          border-radius: 10px;
+          transition: 200ms ease-in-out;
+          position: relative;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          &:hover {
+            background-color: #3990dd;
+            transition: 200ms ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  background-color: $white;
+
+  .container {
+    width: 100%;
+    height: 500px;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      border-bottom: 1px solid $black;
+      padding: 0px 100px 50px 100px;
+      font-size: 80px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 50px 0;
+    }
+  }
+}
+
+.hookah {
+  background: url('../images/hookah.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  padding: 0 40px;
+  overflow: hidden;
+
+  .container {
+    color: $white;
+
+    h1 {
+      font-size: 80px;
+      margin-top: 130px;
+    }
+
+    .hookah-line {
+      margin: 30px 0;
+      width: 500px;
+      height: 1px;
+      background-color: $white;
+    }
+
+    p {
+      width: 500px;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 60px;
+    }
+
+    a {
+      background-color: $hookah-link;
+      color: $white;
+      text-decoration: none;
+      font-size: 25px;
+      padding: 20px 40px;
+      border-radius: 10px;
+
+      text-align: center;
+
+      transition: 200ms ease-in-out;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background-color: #aa170a;
+        transition: 200ms ease-in-out;
+      }
+    }
+  }
+}
+
+.coffee {
+  background: url('../images/coffee.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  padding: 0 40px;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    .position-help {
+      width: 900px;
+      height: 500px;
+    }
+
+    .content {
+      h1 {
+        font-size: 80px;
+        margin-top: 130px;
+      }
+
+      .coffee-line {
+        margin: 30px 0;
+        width: 450px;
+        height: 1px;
+        background-color: $black;
+      }
+
+      p {
+        width: 400px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 60px;
+      }
+
+      a {
+        background-color: $coffee-link;
+        color: $white;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 20px 40px;
+        border-radius: 10px;
+        text-align: center;
+
+        transition: 200ms ease-in-out;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          background-color: #a76432;
+          transition: 200ms ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.news-preview {
+  background-color: #eeeeee;
+  padding: 100px 40px;
+  text-align: center;
+
+  .container {
+    h1 {
+      font-size: 80px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .card {
+        list-style: none;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 #b8b8b8;
+        margin: 100px 10px;
+        max-width: 410px;
+        max-height: 450px;
+        flex: 1 0;
+
+        &-image {
+          max-height: 245px;
+          overflow: hidden;
+
+          &-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.08);
+            }
+          }
+        }
+
+        &-content {
+          padding: 10px;
+          margin: 10px;
+          text-align: left;
+          position: relative;
+
+          .news-perex {
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 22px;
+            min-height: 120px;
+            margin-bottom: 20px;
+          }
+
+          &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .link-archive {
+              text-decoration: none;
+              color: $coffee-link;
+              //color: #3bb168;
+              font-weight: bold;
+              padding: 5px 0;
+              position: relative;
+
+              &:after {
+                content: '';
+                height: 2px;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0%;
+                background-color: $coffee-link;
+                transition: 0.2s;
+              }
+
+              &:hover:after {
+                width: 100%;
+              }
+            }
+
+            &-date {
+              font-weight: normal;
+              font-size: 16px;
+              color: #aaaaaa;
+              position: relative;
+
+              &:before {
+                content: url('../images/calendar.svg');
+                position: absolute;
+                width: 28px;
+                top: -2px;
+                left: -34px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-news-preview a {
+    background-color: $coffee-link;
+    color: $white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      background-color: #a36230;
+      transition: 200ms ease-in-out;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .home-page-bg {
+    padding: 0 20px;
+
+    .container {
+      .content-wrapper {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .main-header {
+          font-size: 35px;
+          line-height: 35px;
+          text-align: center;
+          margin-top: 50px;
+          margin-bottom: 30%;
+        }
+
+        .wrapper {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+
+          .btn-menu {
+            margin-bottom: 40px;
+
+            a {
+              margin-right: 0;
+              font-size: 20px;
+              padding: 15px 60px;
+            }
+          }
+
+          .btn-contact a {
+            font-size: 20px;
+            padding: 15px 50.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    .container {
+      padding: 0;
+
+      h1 {
+        border: none;
+        font-size: 50px;
+        padding: 0;
+      }
+
+      p {
+        width: 100%;
+        padding: 0 20px;
+        text-align: justify;
+      }
+    }
+  }
+
+  .hookah {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        margin: 0;
+        font-size: 50px;
+      }
+
+      .hookah-line {
+        width: 100%;
+      }
+
+      p {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+
+      a {
+        padding: 15px 35px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .coffee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    .container {
+      .position-help {
+        width: 0;
+        height: 0;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          font-size: 50px;
+          margin: 0;
+        }
+
+        .coffee-line {
+          width: 100%;
+        }
+
+        p {
+          width: 100%;
+          font-size: 25px;
+          line-height: 30px;
+          text-align: center;
+        }
+
+        a {
+          padding: 15px 35px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .news-preview {
+    padding: 100px 20px;
+
+    .container {
+      h1 {
+        font-size: 50px;
+      }
+
+      ul {
+        flex-direction: column;
+        margin: 50px 0;
+
+        .card {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .btn-news-preview a {
+      font-size: 18px;
+      padding: 15px 35px;
+    }
+  }
+}

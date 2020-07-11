@@ -1,0 +1,177 @@
+.news-page-bg {
+  @include background('../images/bg-news.jpg');
+  padding: 0 40px;
+
+  .bg-news h1 {
+    @include heading();
+  }
+}
+
+.news-page {
+  background-color: #eeeeee;
+  padding: 100px 40px;
+  text-align: center;
+
+  .container {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-items: center;
+
+      .card {
+        list-style: none;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px 0 #b8b8b8;
+        margin: 20px 10px;
+        max-width: 410px;
+        flex: 1 0;
+
+        &-image {
+          max-height: 245px;
+          overflow: hidden;
+
+          &-img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        &-content {
+          padding: 10px;
+          margin: 10px;
+          text-align: left;
+          position: relative;
+
+          .news-perex {
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 22px;
+            min-height: 120px;
+            margin-bottom: 20px;
+          }
+
+          &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .link-archive {
+              text-decoration: none;
+              color: $coffee-link;
+              //color: #3bb168;
+              font-weight: bold;
+              padding: 5px 0;
+              position: relative;
+
+              &:after {
+                content: '';
+                height: 2px;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0%;
+                background-color: $coffee-link;
+                transition: 0.2s;
+              }
+
+              &:hover:after {
+                width: 100%;
+              }
+            }
+
+            &-date {
+              font-weight: normal;
+              font-size: 16px;
+              color: #aaaaaa;
+              position: relative;
+
+              &:before {
+                content: url('../images/calendar.svg');
+                position: absolute;
+                width: 28px;
+                top: -2px;
+                left: -34px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-paginator {
+    padding: 50px 0 0 0;
+
+    .current {
+      padding: 15px 20px;
+      margin: 5px 5px;
+      color: $white;
+      background-color: $coffee-link;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    a {
+      padding: 15px 20px;
+      margin: 5px 5px;
+      color: $black;
+      display: inline-block;
+      background-color: $border-color;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 200ms ease-in-out;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background-color: #b3b3b3;
+        transition: 200ms ease-in-out;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .news-page-bg {
+    padding: 0 20px;
+
+    .bg-news h1 {
+      font-size: 60px;
+    }
+  }
+
+  .news-page {
+    background-color: #eeeeee;
+    padding: 10px 5px;
+    text-align: center;
+
+    .container {
+      ul {
+        grid-template-columns: auto;
+        margin: 0 auto;
+      }
+    }
+
+    &-paginator {
+      padding: 25px 0 30px 0;
+    }
+  }
+}
