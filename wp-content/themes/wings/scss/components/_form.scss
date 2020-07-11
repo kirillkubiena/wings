@@ -16,7 +16,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      width: 850px;
+      width: 650px;
 
       p {
         font-size: 20px;
@@ -26,9 +26,10 @@
       }
 
       input[name='your-name'],
-      input[name='your-surname'],
       input[name='your-email'],
-      textarea[name='your-message'] {
+      input[name='your-date'],
+      input[name='your-time'],
+      input[name='your-number'] {
         margin-top: 5px;
         font-size: 20px;
         font-family: sans-serif;
@@ -38,22 +39,25 @@
       }
 
       input[name='your-name'] {
-        margin-right: 24px;
-      }
-
-      input[name='your-name'],
-      input[name='your-surname'] {
-        width: 400px;
+        width: 464px;
       }
 
       input[name='your-email'] {
-        width: 824px;
+        width: 464px;
       }
 
-      textarea[name='your-message'] {
-        width: 824px;
-        height: 200px;
-        resize: none;
+      input[name='your-date'] {
+        height: 45px;
+        margin-right: 20px;
+      }
+
+      input[name='your-time'] {
+        height: 45px;
+        margin-right: 20px;
+      }
+
+      input[name='your-number'] {
+        width: 120px;
       }
 
       input[type='submit'] {
