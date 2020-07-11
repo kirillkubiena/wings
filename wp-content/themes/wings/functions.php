@@ -5,7 +5,7 @@ add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
-
+add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 
 // Menu
 register_nav_menus( array(
