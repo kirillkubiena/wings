@@ -4,3 +4,8 @@
   display: block;
   margin: 0 auto;
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
