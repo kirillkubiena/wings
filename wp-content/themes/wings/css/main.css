@@ -57,6 +57,11 @@ body {
   margin: 0 auto;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 h1,
 h2 {
   font-family: sans-serif;
@@ -425,6 +430,7 @@ footer .footer-copyright a:hover {
 
 .contact-form .container .wpcf7-form input[name='your-time'] {
   height: 45px;
+  width: 112px;
   margin-right: 20px;
 }
 
@@ -475,33 +481,37 @@ footer .footer-copyright a:hover {
 }
 
 @media only screen and (max-width: 800px) {
+  .contact-form {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
   .contact-form .container h2 {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   .contact-form .container .wpcf7-form {
     width: 300px;
   }
   .contact-form .container .wpcf7-form input[name='your-name'],
-  .contact-form .container .wpcf7-form input[name='your-surname'],
   .contact-form .container .wpcf7-form input[name='your-email'],
   .contact-form .container .wpcf7-form textarea[name='your-message'] {
     font-size: 18px;
     font-family: sans-serif;
     padding: 10px 10px;
   }
-  .contact-form .container .wpcf7-form input[name='your-name'] {
+  .contact-form .container .wpcf7-form input[name='your-name'],
+  .contact-form .container .wpcf7-form input[name='your-email'],
+  .contact-form .container .wpcf7-form input[name='your-date'] {
+    width: 300px;
     margin-right: 0;
   }
-  .contact-form .container .wpcf7-form input[name='your-name'],
-  .contact-form .container .wpcf7-form input[name='your-surname'] {
-    width: 300px;
-  }
-  .contact-form .container .wpcf7-form input[name='your-email'] {
-    width: 300px;
-  }
-  .contact-form .container .wpcf7-form textarea[name='your-message'] {
-    width: 300px;
+  .contact-form .container .wpcf7-form input[name='your-time'],
+  .contact-form .container .wpcf7-form input[name='your-number'] {
+    width: 140px;
   }
   .contact-form .container .wpcf7-form input[type='submit'] {
     padding: 15px 60px;
@@ -752,7 +762,7 @@ footer .footer-copyright a:hover {
     color: #ffffff;
   }
   .contact .container .contact-map div iframe {
-    width: 315px;
+    width: 360px;
     height: 500px;
   }
 }
@@ -1210,6 +1220,13 @@ footer .footer-copyright a:hover {
     font-size: 20px;
     padding: 15px 50.5px;
   }
+  .about {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .about .container {
     padding: 0;
   }
@@ -1224,6 +1241,7 @@ footer .footer-copyright a:hover {
     text-align: justify;
   }
   .hookah {
+    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1257,6 +1275,7 @@ footer .footer-copyright a:hover {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    height: 100vh;
   }
   .coffee .container .position-help {
     width: 0;
