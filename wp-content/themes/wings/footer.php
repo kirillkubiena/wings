@@ -7,7 +7,7 @@
         <a href="<?php echo get_page_link( get_page_by_title('kontakt')); ?>#map">Zobrazit</a>
         <div class="footer-contact-phone">
           <h4>Telefon</h4>
-          <a href="tel:+420735004997"><?php the_field('telefon', 'option'); ?></a>
+          <a href="tel:<?php the_field('telefon', 'option'); ?>"><?php the_field('telefon', 'option'); ?></a>
         </div>
       </div>
       <div class="footer-open-hours">
