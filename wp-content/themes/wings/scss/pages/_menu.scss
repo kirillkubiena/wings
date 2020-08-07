@@ -20,7 +20,8 @@
   .hookah-card,
   .coffee-card,
   .tea-card,
-  .other-card {
+  .other-card,
+  .meal-card {
     @include cards();
   }
 }
@@ -42,7 +43,8 @@
     .hookah-card,
     .coffee-card,
     .tea-card,
-    .other-card {
+    .other-card,
+    .meal-card {
       &-img {
         h2 {
           font-size: 60px;

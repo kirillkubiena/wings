@@ -1,35 +1,20 @@
-<!-- Vložení bloku div -->
 <div class="menu-cards-wrapper container">
-    <!-- Vložení ohraničení -->
     <div class="container">
-        <!-- Vložení seznamu dýmek -->
         <ul class="hookah-card" id="hookah-menu">
             <li class="hookah-card-img">
-                <!-- Vložení obrázku -->
                 <img src="<?php bloginfo('template_url') ?>/images/menu-hookah.jpg" alt="hookah" />
-                <!-- Nadpis -->
                 <h2>Dýmky</h2>
             </li>
-            <!-- Seznam všech dýmek -->
             <li class="hookah-card-menu">
-                <!-- Napdis dýmky -->
                 <h2><?php the_field('nadpis_dymky'); ?></h2>
-                <!-- Vytvoření linky -->
                 <div class="line"></div>
                 <div><?php
-                    // Podmínka pro zjištění, jestli pole 'polozky_dymky' není prázdné
                     if( have_rows('polozky_dymky') ):
-                        // Procházení pole
                         while ( have_rows('polozky_dymky') ) : the_row(); ?>
-                            <!-- Vypsání získáných hodnot -->
                             <p><?php the_sub_field('nazev_dymky'); ?><br/>(<?php the_sub_field('poznamka_dymky'); ?>) <span><?php the_sub_field('cena_dymky'); ?>,-</span></p>
-                        <!-- Ukončení procházení -->
                         <?php endwhile;
-                    // Pokračování podmínky
                     else : ?>
-                        <!-- Pokud pole je prázdné, vypíše se následující věta -->
                         <p>Nenašly se žádné položky :(</p>
-                    <!-- Ukončení podmínky -->
                     <?php endif;
                 ?></div>
             </li>
@@ -47,6 +32,50 @@
                     if( have_rows('polozky_caj') ):
                         while ( have_rows('polozky_caj') ) : the_row(); ?>
                             <p><?php the_sub_field('nazev_caj'); ?> <span><?php the_sub_field('cena_caj'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+            </li>
+        </ul>
+        <ul class="meal-card">
+            <li class="meal-card-img">
+                <img src="<?php bloginfo('template_url') ?>/images/menu-meal.jpg" alt="meal" />
+                <h2>Jídlo</h2>
+            </li>
+            <li class="meal-card-menu">
+                <h2><?php the_field('nadpis_pizza'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_pizza') ):
+                        while ( have_rows('polozky_pizza') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_pizza'); ?> <span><?php the_sub_field('cena_pizza'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_triangles'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_triangles') ):
+                        while ( have_rows('polozky_triangles') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_triangles'); ?> <span><?php the_sub_field('cena_triangles'); ?>,-</span></p>
+                        <?php endwhile;
+                    else : ?>
+                        <p>Nenašly se žádné položky :(</p>
+                    <?php endif;
+
+                ?></div>
+                <h2><?php the_field('nadpis_pochutiny'); ?></h2>
+                <div class="line"></div>
+                <div><?php
+                    if( have_rows('polozky_pochutiny') ):
+                        while ( have_rows('polozky_pochutiny') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_pochutiny'); ?> <span><?php the_sub_field('cena_pochutiny'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
@@ -101,55 +130,55 @@
                 <div><?php
                     if( have_rows('polozky_alko') ):
                         while ( have_rows('polozky_alko') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_alko'); ?><br>(<?php the_sub_field('poznamka_alko') ?>) <span><?php the_sub_field('cena_alko'); ?>,-</span></p>
+                            <p><?php the_sub_field('nazev_alko'); ?> <span><?php the_sub_field('cena_alko'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
                     <?php endif;
 
                 ?></div>
-                <h2><?php the_field('nadpis_whiskey'); ?></h2>
+                <h2><?php the_field('nadpis_piva'); ?></h2>
                 <div class="line"></div>
                 <div><?php
-                    if( have_rows('polozky_whiskey') ):
-                        while ( have_rows('polozky_whiskey') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_whiskey'); ?> <span><?php the_sub_field('cena_whiskey'); ?>,-</span></p>
+                    if( have_rows('polozky_piva') ):
+                        while ( have_rows('polozky_piva') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_piva'); ?> <span><?php the_sub_field('cena_piva'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
                     <?php endif;
 
                 ?></div>
-                <h2><?php the_field('nadpis_gin'); ?></h2>
+                <h2><?php the_field('nadpis_cervene_vina'); ?></h2>
                 <div class="line"></div>
                 <div><?php
-                    if( have_rows('polozky_gin') ):
-                        while ( have_rows('polozky_gin') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_gin'); ?> <span><?php the_sub_field('cena_gin'); ?>,-</span></p>
+                    if( have_rows('polozky_cervene_vina') ):
+                        while ( have_rows('polozky_cervene_vina') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_cervene_vina'); ?> <span><?php the_sub_field('cena_cervene_vina'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
                     <?php endif;
 
                 ?></div>
-                <h2><?php the_field('nadpis_vodka'); ?></h2>
+                <h2><?php the_field('nadpis_bile_vina'); ?></h2>
                 <div class="line"></div>
                 <div><?php
-                    if( have_rows('polozky_vodka') ):
-                        while ( have_rows('polozky_vodka') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_vodka'); ?> <span><?php the_sub_field('cena_vodka'); ?>,-</span></p>
+                    if( have_rows('polozky_bile_vina') ):
+                        while ( have_rows('polozky_bile_vina') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_bile_vina'); ?> <span><?php the_sub_field('cena_bile_vina'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
                     <?php endif;
 
                 ?></div>
-                <h2><?php the_field('nadpis_rum'); ?></h2>
+                <h2><?php the_field('nadpis_drinky'); ?></h2>
                 <div class="line"></div>
                 <div><?php
-                    if( have_rows('polozky_rum') ):
-                        while ( have_rows('polozky_rum') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_rum'); ?> <span><?php the_sub_field('cena_rum'); ?>,-</span></p>
+                    if( have_rows('polozky_drinky') ):
+                        while ( have_rows('polozky_drinky') ) : the_row(); ?>
+                            <p><?php the_sub_field('nazev_drinky'); ?> <span><?php the_sub_field('cena_drinky'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
