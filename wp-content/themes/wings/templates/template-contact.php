@@ -9,7 +9,7 @@
     <section class="contact" id="map">
         <?php include('parts/block-contact-map.php') ?>
     </section>
-    <section class="contact-form">
-        <?php include('parts/block-contact-form.php') ?> 
-    </section>
+    <!--<section class="contact-form">
+        <?php //include('parts/block-contact-form.php') ?> 
+    </section>-->
 <?php get_footer(); ?>
