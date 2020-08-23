@@ -662,7 +662,6 @@ footer .footer-copyright a:hover {
 .contact {
   background-color: #ffffff;
   padding: 0 40px;
-  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -676,7 +675,7 @@ footer .footer-copyright a:hover {
 }
 
 .contact .container .contact-wrapper {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .contact .container .contact-wrapper .contact-address {
@@ -747,6 +746,15 @@ footer .footer-copyright a:hover {
 .contact .container .contact-map div iframe {
   width: 700px;
   height: 400px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .contact .container .contact-wrapper {
+    margin-top: 100px;
+  }
+  .contact .container .contact-map div iframe {
+    width: 550px;
+  }
 }
 
 @media only screen and (max-width: 850px) {
