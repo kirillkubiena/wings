@@ -10,7 +10,7 @@
 .contact {
   background-color: $white;
   padding: 0 40px;
-  height: 100%;
+  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +97,94 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+  .contact-page-bg {
+    .bg-contact h1 {
+      font-size: 120px;
+    }
+  }
+
+  .contact {
+    padding: 0 10px;
+
+    .container {
+      flex-direction: column;
+      padding: 50px 0;
+
+      .contact-wrapper {
+        margin: 120px auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .contact-address {
+          margin-right: 70px;
+
+          h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 18px;
+          }
+
+          &:before {
+            left: -75px;
+            width: 80px;
+          }
+        }
+
+        .contact-phone {
+          h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+          }
+          a {
+            font-size: 18px;
+          }
+
+          &:before {
+            content: url('../images/telephone.svg');
+            position: absolute;
+            top: -10px;
+            left: -65px;
+            width: 70px;
+          }
+        }
+      }
+
+      .contact-map {
+        margin: 0 auto;
+        div {
+          border: 8px solid $black;
+          position: relative;
+          margin-top: 80px;
+
+          &:before {
+            content: 'Mapa';
+            font-size: 35px;
+            font-family: sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 40px;
+            position: absolute;
+            top: -65px;
+            left: -8px;
+            background-color: $black;
+            color: $white;
+          }
+
+          iframe {
+            width: 650px;
+            height: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .contact-page-bg {
     padding: 0 20px;
 
@@ -108,18 +195,18 @@
 
   .contact {
     padding: 0 10px;
-    height: 150%; //wtf? :D
 
     .container {
       flex-direction: column;
       padding: 50px 0;
-      margin-bottom: 100px; //here
 
       .contact-wrapper {
-        margin: 0 auto;
+        margin: 80px auto 0 auto;
+        flex-direction: column;
 
         .contact-address {
           margin-bottom: 50px;
+          margin-right: 0;
 
           h2 {
             font-size: 30px;
