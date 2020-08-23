@@ -10,7 +10,6 @@
 .contact {
   background-color: $white;
   padding: 0 40px;
-  height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +21,7 @@
     align-items: flex-start;
 
     .contact-wrapper {
-      margin-top: 50px;
+      margin-top: 100px;
 
       .contact-address {
         position: relative;
@@ -91,6 +90,24 @@
         iframe {
           width: 700px;
           height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .contact {
+    .container {
+      .contact-wrapper {
+        margin-top: 100px;
+      }
+
+      .contact-map {
+        div {
+          iframe {
+            width: 550px;
+          }
         }
       }
     }
