@@ -26,7 +26,39 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+  .menu-page-bg {
+    .bg-menu h1 {
+      font-size: 120px;
+    }
+  }
+  .menu-cards {
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    .hookah-card,
+    .coffee-card,
+    .tea-card,
+    .other-card,
+    .meal-card {
+      width: 500px;
+      margin: 0 auto 20px auto;
+
+      &-img {
+        h2 {
+          font-size: 60px;
+        }
+      }
+
+      &-menu {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .menu-page-bg {
     padding: 0 20px;
 
@@ -45,6 +77,8 @@
     .tea-card,
     .other-card,
     .meal-card {
+      width: auto;
+
       &-img {
         h2 {
           font-size: 60px;

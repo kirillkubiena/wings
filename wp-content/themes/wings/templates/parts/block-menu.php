@@ -154,7 +154,7 @@
                 <div><?php
                     if( have_rows('polozky_cervene_vina') ):
                         while ( have_rows('polozky_cervene_vina') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_cervene_vina'); ?> <span><?php the_sub_field('cena_cervene_vina'); ?>,-</span></p>
+                            <p><?php the_sub_field('nazev_cervene_vina'); ?><br><?php the_sub_field('poznamka_cervene_vina'); ?> <span><?php the_sub_field('cena_cervene_vina'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>
@@ -166,7 +166,7 @@
                 <div><?php
                     if( have_rows('polozky_bile_vina') ):
                         while ( have_rows('polozky_bile_vina') ) : the_row(); ?>
-                            <p><?php the_sub_field('nazev_bile_vina'); ?> <span><?php the_sub_field('cena_bile_vina'); ?>,-</span></p>
+                            <p><?php the_sub_field('nazev_bile_vina'); ?><br><?php the_sub_field('poznamka_bile_vina'); ?> <span><?php the_sub_field('cena_bile_vina'); ?>,-</span></p>
                         <?php endwhile;
                     else : ?>
                         <p>Nenašly se žádné položky :(</p>

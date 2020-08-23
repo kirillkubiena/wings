@@ -7,7 +7,9 @@
   <meta name="author" content="Kirill Kubiena">
   <meta name="copyright" content="Wings 2020">
   <meta name="description" content="Jsem krásná moderní kavárna s vynikajícími dýmkami, s příjemným prostředím a originalitou, s vyjímečnou chutí kávy, čajů a pochutin">
-  <meta name="keywords" content="Wings, wings karviná, čajovna, čajovna karviná, hookah bar, kávarna, karvina" />
+  <meta name="keywords" content="Wings, wings karvina, čajovna, čajovna karvina, hookah bar karvina, kávarna, karviná" />
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wingskarvina.cz/" />
   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/main.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/images/icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/images/icon/favicon-32x32.png">

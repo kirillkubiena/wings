@@ -5,11 +5,13 @@
     <section class="about">
         <?php include('templates/parts/block-about-us.php'); ?>
     </section>
-    <section class="hookah">
-        <?php include('templates/parts/block-hookah.php'); ?>
-    </section>
-    <section class="coffee">
-        <?php include('templates/parts/block-coffee.php'); ?>
+    <section class="hc-wrapper">
+        <section class="hookah">
+            <?php include('templates/parts/block-hookah.php'); ?>
+        </section>
+        <section class="coffee">
+            <?php include('templates/parts/block-coffee.php'); ?>
+        </section>
     </section>
     <!--<section class="news-preview">
         <?php // include('templates/parts/block-news.php'); ?>

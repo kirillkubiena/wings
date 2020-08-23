@@ -7,7 +7,7 @@
 
   .logo img {
     width: 180px;
-    margin-top: 20px;
+    margin-top: 14px;
   }
 
   .myMenu {
@@ -124,7 +124,30 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
+  .nav {
+    .myMenu {
+      .navigation {
+        padding: 0 40px;
+
+        ul {
+          li {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .myMenu.responsive {
+      .navigation {
+        .responsive-icon {
+          top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
   .nav {
     .myMenu {
       .navigation {
