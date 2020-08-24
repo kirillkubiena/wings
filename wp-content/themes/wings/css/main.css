@@ -759,7 +759,7 @@ footer .footer-copyright a:hover {
 
 @media only screen and (max-width: 850px) {
   .contact-page-bg .bg-contact h1 {
-    font-size: 120px;
+    font-size: 100px;
   }
   .contact {
     padding: 0 10px;
@@ -824,7 +824,7 @@ footer .footer-copyright a:hover {
     color: #ffffff;
   }
   .contact .container .contact-map div iframe {
-    width: 650px;
+    width: 550px;
     height: 500px;
   }
 }
@@ -951,7 +951,7 @@ footer .footer-copyright a:hover {
 
 @media only screen and (max-width: 850px) {
   .gallery-page-bg .bg-gallery h1 {
-    font-size: 120px;
+    font-size: 100px;
   }
 }
 
@@ -1749,7 +1749,7 @@ footer .footer-copyright a:hover {
 
 @media only screen and (max-width: 850px) {
   .menu-page-bg .bg-menu h1 {
-    font-size: 120px;
+    font-size: 100px;
   }
   .menu-cards-wrapper {
     flex-direction: column;
