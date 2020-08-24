@@ -4,10 +4,16 @@
   <meta charset="<?php bloginfo('charset') ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="author" content="Kirill Kubiena">
-  <meta name="copyright" content="Wings 2020">
-  <meta name="description" content="Jsem krásná moderní kavárna s vynikajícími dýmkami, s příjemným prostředím a originalitou, s vyjímečnou chutí kávy, čajů a pochutin">
-  <meta name="keywords" content="Wings, wingskarvina.cz, wingkarvina, shisha, wings karvina, čajovna wings karvina, wings cajovna, cajovna, čajovna karvina, hookah bar karvina, kávarna, kavarna wings karvina, karvina, hookah," />
+  <meta name="author" content="Kirill Kubiena" />
+  <meta name="copyright" content="Wings 2020" />
+  <meta name="description" content="Jsem krásná moderní kavárna s vynikajícími dýmkami, s příjemným prostředím a originalitou, s vyjímečnou chutí kávy, čajů a pochutin" />
+  <meta name="keywords" content="Wings, wingskarvina, shisha, wings karvina, cajovna wings karvina, wings cajovna, cajovna, cajovna karvina, hookah bar karvina, kavarna, kavarna wings karvina, karvina, hookah" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Wings | Coffee&Shishabar" />
+  <meta property="og:description" content="Jsem krásná moderní kavárna s vynikajícími dýmkami, s příjemným prostředím a originalitou, s vyjímečnou chutí kávy, čajů a pochutin" />
+  <meta property="og:url" content="https://www.wingskarvina.cz/" />
+  <meta property="og:site_name" content="Wings" />
+  <link rel="canonical" href="https://www.wingskarvina.cz/">
   <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/main.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url') ?>/images/icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_url') ?>/images/icon/favicon-32x32.png">
